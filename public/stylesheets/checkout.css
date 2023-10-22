@@ -1,0 +1,9 @@
+.container {
+    margin-top: 50px;
+    max-width: 960px;
+}
+
+body {
+    background: linear-gradient(lightgrey, grey);
+    color: black
+}

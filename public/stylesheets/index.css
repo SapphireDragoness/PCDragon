@@ -1,0 +1,20 @@
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 20rem;
+}
+
+body {
+    background: linear-gradient(lightgrey, grey);
+}
+
+nav {
+    background-color: lightgrey;
+}

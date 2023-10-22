@@ -1,0 +1,299 @@
+<%- include('header') %>
+
+  <!--Carousel-->
+  <div id="topCarousel" class="carousel slide slide mb-3 mt-0 pt-0" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainpageCarousel" data-bs-slide-to="0" class=""
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mainpageCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+        aria-current="true"></button>
+      <button type="button" data-bs-target="#mainpageCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+        class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        </svg>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Browse our newest products!</h1>
+            <p>Unlock the potential with these brand new components!</p>
+            <p><a class="btn btn-lg btn-primary" href="#products">See more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        </svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Any questions?</h1>
+            <p>Read our FAQs!</p>
+            <p><a class="btn btn-lg btn-primary" href="">FAQs</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        </svg>
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>New to our website?</h1>
+            <p>Sign up now!</p>
+            <p><a class="btn btn-lg btn-primary" href="signup.html">Sign up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#topCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#topCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--Products-->
+  <div class="container my-5" id="products">
+    <h1 class="mb-5 text-center">Top Sellers</h1>
+    <header class="mb-4">
+      <h3>CPUs</h3>
+    </header>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/AMD_Ryzen_5_3600.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <a class="text-decoration-none" href="product.html">
+              <h5 class="card-title">AMD Ryzen 5 3600</h5>
+            </a>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/AMD_Threadripper_3990X.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <a class="text-decoration-none" href="">
+              <h5 class="card-title">AMD Threadripper 3990X</h5>
+            </a>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/Intel_i7_12700KF.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <a class="text-decoration-none" href="product.html">
+              <h5 class="card-title">Intel Core i7 12700KF</h5>
+            </a>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/Intel_i9_13900KS.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <a class="text-decoration-none" href="product.html">
+              <h5 class="card-title">Intel Core i9 13900KS</h5>
+            </a>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <header class="mb-4">
+      <h3>Motherboards</h3>
+    </header>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/MSI_MAG_B550_Tomahawk.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">MSI MAG B550 Tomahawk</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/ASUS_ROG_STRIX_B550-A.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">ASUS ROG STRIX B550-A</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/ASRock_B550M.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">ASRock B550M</h5>
+            <p class="card-text">$€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/ASUS_TUF_Gaming_X570-Plus.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">ASUS TUF Gaming X570-Plus</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <header class="mb-4">
+      <h3>GPUs</h3>
+    </header>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/ASUS_TUF_GAMING_GeForce_RTX_4080.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">ASUS TUF GAMING GeForce RTX 4080</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/MSI_Geforce_RTX_3060_12GB.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">MSI Geforce RTX 3060</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/Asus_ROG_STRIX_GAMING_OC_GeForce_RTX_4090.jpg" class="card-img-top"
+            style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">ASUS ROG STRIX GAMING OC GeForce RTX 4090</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/Gigabyte_EAGLE_Radeon_RX_6600.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Gigabyte EAGLE Radeon RX 6600</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <header class="mb-4">
+      <h3>Memory</h3>
+    </header>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/Corsair_Vengeance_Pro.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Corsair Vengeance Pro</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/G.Skill_Ripjaws.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">G.Skill Ripjaws</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/Kingston_Fury_Beast.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Kingston Fury Beast</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+        <div class="card w-100 my-2 shadow-2-strong">
+          <img src="/images/SiliconPower_GAMING.jpg" class="card-img-top" style="aspect-ratio: 1 / 1" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Silicon Power GAMING</h5>
+            <p class="card-text">€199.00</p>
+            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
+              <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<%- include('footer') %>
