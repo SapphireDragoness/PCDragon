@@ -6,8 +6,4 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'PCDragon' });
 });
 
-router.get('/faq', function(req, res, next) {
-  res.send('FAQs');
-});
-
 module.exports = router;

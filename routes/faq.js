@@ -1,9 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
 router.get('/faq', function(req, res, next) {
-  res.render('FAQs');
+  res.render('faq', { title: 'PCDragon - FAQ' });
 });
 
 module.exports = router;
