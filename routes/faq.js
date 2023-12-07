@@ -1,7 +1,7 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-router.get('/faq', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('faq', { title: 'PCDragon - FAQ' });
 });
 

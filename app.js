@@ -10,18 +10,32 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const session = require('express-session');
 const fileUpload = require('express-fileupload');
+
 const userDao = require('./models/user-dao.js');
 
-const indexRouter = require('./routes/index');
+const indexRouter = require('./routes/index')
 const faqRouter = require('./routes/faq');
 const registerRouter = require('./routes/register');
 const productRouter = require('./routes/product');
 const checkoutRouter = require('./routes/checkout');
 const profileBuyerRouter = require('./routes/profile-buyer');
 
+// init express
+const app = express();
+const port = 3000;
+
+// routes
+app.use('/', indexRouter);
+app.use('/index', indexRouter);
+app.use('/register', registerRouter);
+app.use('/product', productRouter);
+app.use('/faq', faqRouter);
+app.use('/checkout', checkoutRouter);
+app.use('/profile-buyer', profileBuyerRouter);
+
 // set up the "username and password" login strategy
 // by setting a function to verify username and password
-passport.use(new LocalStrategy(
+/* passport.use(new LocalStrategy(
   function(username, password, done) {
     userDao.getUser(username, password).then(({user, check}) => {
       if (!user) {
@@ -33,18 +47,13 @@ passport.use(new LocalStrategy(
       return done(null, user);
     })
   }
-));
-
-// init express
-const app = express();
-const port = 3000;
-
+)); */
 
 // every requests body will be considered as in JSON format
 app.use(express.json());
 
 // set up the 'public' component as a static website
-app.use(express.static('public'));
+/* app.use(express.static('public')); */
 
 // set up the session
 app.use(session({
@@ -68,25 +77,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
-app.get('/faq', (req, res) => {
-  res.render('faq');
-});
-app.get('/register', (req, res) => {
-  res.render('register');
-});
-app.get('/product', (req, res) => {
-  res.render('product');
-});
-app.get('/profile-buyer', (req, res) => {
-  res.render('profile-buyer');
-});
-app.get('/checkout', (req, res) => {
-  res.render('checkout');
-});
-
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
@@ -102,12 +92,5 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-// routes
-app.use('/register', registerRouter);
-app.use('/product', productRouter);
-app.use('/faq', faqRouter);
-app.use('/checkout', checkoutRouter);
-app.use('/profile-buyer', profileBuyerRouter);
 
 module.exports = app;
